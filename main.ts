@@ -2,6 +2,7 @@ input.onButtonPressed(Button.A, function () {
     PA += 1
     Rounds += 1
     showScoreboard()
+    basic.showString("A")
 })
 function showScoreboard () {
     OLED.clear()
@@ -17,11 +18,13 @@ input.onButtonPressed(Button.AB, function () {
     Ties += 1
     Rounds += 1
     showScoreboard()
+    basic.showString("tie")
 })
 input.onButtonPressed(Button.B, function () {
     PB += 1
     Rounds += 1
     showScoreboard()
+    basic.showString("B")
 })
 input.onGesture(Gesture.Shake, function () {
     reset()
